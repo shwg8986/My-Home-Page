@@ -8,6 +8,11 @@
 
 ## 個人メモ、サイトの更新方法
 
+・firebase toolsのインストール(初めての時、もしくはアップデートする時に実行する)
+```
+npm install -g firebase-tools
+```
+
 ・firebaseにログイン
 ```
 firebase login
