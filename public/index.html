@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8"/>
+    <title>Shogo Shimada HP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#3399ff"/>
+    <meta name="robots" content="index, all">
+    <meta name="description" content="Shogo Shimada HP"/>
+    <meta name="keywords" content="島田匠悟,島田 匠悟 , 島田, 匠悟, しまだ, しょうご, Shogo Shimada, Shogo, Shimada"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/static/images/avatar/HMDIcon.png"/>
+    <link type="image/png" sizes="16x16" rel="icon" href="%PUBLIC_URL%/static/images/avatar/HMDIcon.png">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="shwg's HP"/>
+    <meta property="og:description" content="Shogo ShimadaのHPです。"/>
+    <meta property="og:site_name" content="Shogo Shimada HP"/>
+    <meta property="og:image" content="%PUBLIC_URL%/static/images/avatar/HMDIcon.png"/>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+    //この情報は公開しても問題ないらしい
+    const firebaseConfig = {
+        apiKey: "AIzaSyA99vmaxfQsDRKcXHvpng9gTAbxIdGzaoY",
+        authDomain: "shwg-hp.firebaseapp.com",
+        projectId: "shwg-hp",
+        storageBucket: "shwg-hp.appspot.com",
+        messagingSenderId: "616377273051",
+        appId: "1:616377273051:web:d91c9332870db6dec79afe",
+        measurementId: "G-K57XSRCQ9S"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</body>
+
+</html>
