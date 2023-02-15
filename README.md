@@ -8,11 +8,22 @@
 
 ## 個人メモ、サイトの更新方法
 
+・firebaseにログイン
 ```
-npm install -g firebase-tools
 firebase login
 ```
 
+・進めていく
 ```
 firebase init
 ```
+ここでHostingのところで、Spaceキーを押して、その後Enter。
+そのあとWhat do you want to use as your public directory?と聞かれるので、buildと入力し、Enter。
+その後の質問は全て$N$と答えていく。
+
+・最後にビルドしてデプロイ
+```
+yarn build
+firebase deploy
+```
+
