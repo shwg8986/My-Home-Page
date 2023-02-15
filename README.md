@@ -17,9 +17,9 @@ firebase login
 ```
 firebase init
 ```
-ここでHostingのところで、Spaceキーを押して、その後Enter。
-そのあとWhat do you want to use as your public directory?と聞かれるので、buildと入力し、Enter。
-その後の質問は全て$N$と答えていく。
+ここでHostingのところで、Spaceキーを押す。選択されているのを確認できたらEnter。
+その後、What do you want to use as your public directory? と聞かれるので、buildと入力し、Enter。
+以降表示される質問は、全て$N$と答えていく。
 
 ・最後にビルドしてデプロイ
 ```
