@@ -13,7 +13,7 @@
 ```
 npm install -g firebase-tools
 ```
-<br/>
+</br>
 ・firebaseにログイン
 ```
 firebase login
