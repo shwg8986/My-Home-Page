@@ -33,4 +33,7 @@ firebase init
 yarn build
 firebase deploy
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> f7b521dd (ファイルの追加)
