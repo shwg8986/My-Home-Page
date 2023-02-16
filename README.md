@@ -13,12 +13,12 @@
 ```
 npm install -g firebase-tools
 ```
-
+<br/>
 ・firebaseにログイン
 ```
 firebase login
 ```
-
+<br/>
 ・進めていく
 ```
 firebase init
@@ -26,7 +26,7 @@ firebase init
 ここでHostingのところで、Spaceキーを押す。選択されているのを確認できたらEnter。
 その後、What do you want to use as your public directory? と聞かれるので、buildと入力し、Enter。
 以降表示される質問は、全て "N" と答えていく。
-
+<br/>
 ・最後にビルドしてデプロイ
 ```
 yarn build
