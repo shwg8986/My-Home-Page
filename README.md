@@ -7,8 +7,8 @@
 そのインターンでMaterial UIというフレームワークが使用されていたので、勉強も兼ねて作成した個人サイトになります。
 （そのため、このサイトの大部分をMaterial UIを用いて作成しています。）
 
-</br>
-</br>
+<br>
+<br>
 
 ## 個人用メモ - サイトの更新方法
 
@@ -16,7 +16,7 @@
 ```
 npm install -g firebase-tools
 ```
-</br>
+<br>
 ・firebaseにログイン
 ```
 firebase login
