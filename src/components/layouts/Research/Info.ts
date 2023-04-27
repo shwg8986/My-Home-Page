@@ -33,14 +33,11 @@ export const ResearchWords = [
     "VR空間",
     "VR酔い",
     "Cybersickness",
-    "臨場感",
     "眼球運動",
     "視線追跡",
     "HCI",
     "UX",
     "ユーザビリティ",
-    "電気刺激",
-    "ロボットアーム",
     "遠隔作業",
 ];
 
@@ -58,5 +55,5 @@ export const Publications = [
 ];
 
 export const Exhibitions = [
-    createData('V.Yem, Y.Ojima, S.Shimada, and Y.Ikei. "Real time multispace experience", Laval Virtual 2023, April 12-14, 2023, Laval in France.'),
+    createData('V.Yem, Y.Ojima, S.Shimada, and Y.Ikei. "Real time multispace experience", Laval Virtual 2023, April 12-16, 2023, Laval in France.'),
 ];
