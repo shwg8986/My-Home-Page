@@ -26,7 +26,7 @@ export const Profile = () => {
                             p: "10px 40px 10px 70px",
                         }}
                     >
-                        多忙のため、本サイトの開発を一時休止しております。
+                        多忙のため、当サイトの開発速度が遅くなっております。
                     </Alert>
                 </Collapse>
             </Box>
@@ -53,7 +53,7 @@ export const Profile = () => {
                                     maxWidth: 200,
                                 },
                             }}
-                            image="/static/images/profile/ProfileImage.jpg"
+                            image="/static/images/profile/ProfileImage2.jpg"
                             alt="Profile Image"
                         />
                     </Grid>
@@ -101,7 +101,7 @@ export const Profile = () => {
                                         fontSize: 15,
                                     },
                                 }}>
-                                島田匠悟（Shogo Shimada）
+                                島田匠悟: Shogo Shimada
                             </Typography>
                             <Typography
                                 component="p"
@@ -116,7 +116,7 @@ export const Profile = () => {
                                     },
                                 }}>
                                 東京都立大学大学院 システムデザイン研究科 情報科学域 <br />
-                                博士前期課程1年
+                                修士課程2年
                                 <Link
                                     sx={{
                                         color: "#99ff33",
@@ -124,9 +124,9 @@ export const Profile = () => {
                                         ml: 1,
                                         ":hover": { color: "#3399ff", cursor: "pointer" },
                                     }}
-                                    href="https://www.comp.sd.tmu.ac.jp/nishilab/mem.html"
+                                    href="https://www.comp.sd.tmu.ac.jp/nishilab"
                                     target="_blank"
-                                >西内研究室
+                                >西内研究室(B4~)
                                 </Link> &
                                 <Link
                                     sx={{
@@ -135,11 +135,11 @@ export const Profile = () => {
                                         ml: 1,
                                         ":hover": { color: "#3399ff", cursor: "pointer" },
                                     }}
-                                    href="https://sites.google.com/view/vibolyem/members?authuser=0"
+                                    href="https://sites.google.com/view/vibolyem/home?authuser=0"
                                     target="_blank"
-                                >ヤェム研究室
-                                </Link> 所属 <br /><br />
-                                生まれ：1999年 神奈川県
+                                >ヤェム研究室(M1~)
+                                </Link><br /><br />
+                                生まれ: 1999年 神奈川県
                             </Typography>
                         </Box>
                     </Grid>
