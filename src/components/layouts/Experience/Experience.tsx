@@ -88,7 +88,7 @@ export const Experience = () => {
                                     aria-controls="panel3a-content"
                                     id="panel3a-header"
                                 >
-                                    <Typography>Getting Ready...</Typography>
+                                    <Typography>Getting ready... from 2024</Typography>
                                 </AccordionSummary>
                             </Accordion>
                         </div>
