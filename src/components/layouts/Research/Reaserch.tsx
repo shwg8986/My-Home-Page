@@ -139,7 +139,7 @@ export const Research = () => {
                     }}>
                         {words.map((word) => (
                             <Card key={word} sx={{
-                                width: 180,
+                                width: 200,
                                 height: 50,
                                 m: "0 5px 10px 5px",
                                 borderRadius: 90,
