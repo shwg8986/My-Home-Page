@@ -78,7 +78,7 @@ export const Profile = () => {
                                         fontSize: 15,
                                     },
                                 }}>
-                                島田匠悟: Shogo Shimada
+                                島田匠悟 (Shogo SHIMADA)
                             </Typography>
                             <Typography
                                 component="p"
