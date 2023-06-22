@@ -7,29 +7,6 @@ export const Profile = () => {
     const [open, setOpen] = useState(true);
     return (
         <>
-            <Box sx={{ width: '100%' }}>
-                <Collapse in={open}>
-                    <Alert variant="filled" severity="info"
-                        action={
-                            <IconButton
-                                aria-label="close"
-                                color="inherit"
-                                size="small"
-                                onClick={() => {
-                                    setOpen(false);
-                                }}
-                            >
-                                <CloseIcon fontSize="inherit" />
-                            </IconButton>
-                        }
-                        sx={{
-                            p: "10px 40px 10px 70px",
-                        }}
-                    >
-                        多忙のため、当サイトの開発速度が遅くなっております。
-                    </Alert>
-                </Collapse>
-            </Box>
             <Box sx={{
                 width: "100%",
                 p: "90px 0",
