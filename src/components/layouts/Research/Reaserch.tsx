@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Box, Typography, Grid, Container, Card, CardContent, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import { Publications, Exhibitions, ResearchWords } from "./Info";
-import { ResearchDetailSlide } from "./ResearchDetailSlide";
 import { normalize } from 'path';
 
 const words: string[] = [...ResearchWords]
@@ -26,7 +25,7 @@ export const Research = () => {
                         fontWeight: "Prime",
                         ml: 1.5,
                     }}>
-                    Research Contents
+                    Academic Research
                 </Typography>
                 <Typography
                     component="h2"
@@ -34,28 +33,12 @@ export const Research = () => {
                         color: "#gray",
                         fontSize: 14,
                         fontWeight: "Light",
-                        ml: 12,
+                        ml: 14,
                         mb: 5,
                     }}>
-                    ー 研究内容 ー
+                    ー 研究 ー
                 </Typography>
             </Box>
-            <Box sx={{
-                width: "900px",
-                m: "0 auto",
-                mt: 9,
-                mb: 9,
-                p: 1,
-                boxShadow: "0 10px 25px 0 rgba(0, 0, 0, .2)",
-
-                "@media screen and (max-width: 1000px)": {
-                    width: "90%",
-                    mt: 8,
-                },
-            }}>
-                <ResearchDetailSlide />
-            </Box>
-
             <Container>
                 <Grid container spacing={1}>
                     <Grid item sx={{
@@ -156,7 +139,7 @@ export const Research = () => {
                     }}>
                         {words.map((word) => (
                             <Card key={word} sx={{
-                                width: 150,
+                                width: 180,
                                 height: 50,
                                 m: "0 5px 10px 5px",
                                 borderRadius: 90,
