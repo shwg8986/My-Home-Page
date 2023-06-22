@@ -35,7 +35,7 @@ export const Awards = () => {
                             fontWeight: "Light",
                             ml: 4,
                         }}>
-                        ー 表彰 ー
+                        ー 受賞 ー
                     </Typography>
                 </Grid>
             </Grid>
