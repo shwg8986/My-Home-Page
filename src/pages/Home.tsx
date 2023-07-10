@@ -8,6 +8,7 @@ import { Experience } from "../components/layouts/Experience/Experience";
 import { Research } from "../components/layouts/Research/Reaserch";
 import { Programming } from "../components/layouts/Programming/Programming";
 import { Contact } from "../components/layouts/Contact";
+import { Link } from "../components/layouts/Link/Linx";
 
 export const Home = () => {
     return (
@@ -21,6 +22,7 @@ export const Home = () => {
             <Certifications />
             <Awards />
             <Contact />
+            <Link />
             <Footer />
         </>
     );
