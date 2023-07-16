@@ -39,7 +39,7 @@ export const ExperienceInfo = [
     {
         "title": "Biometrics - intelligent solutions in Poland",
         "days": "2023/6/26〜2023/7/8",
-        "content": "“International Summer School: Biometrics - intelligent solutiona at Białystok University of Technology, Poland” に参加しました。(The project is implemented within the SPINAKER programme - international intensive programmes run by the polish national agency for academic exchange(NAWA). It provides for the organization of a summer school - “Biometrics - intelligent solutions”.)",
+        "content": "“International Summer School: Biometrics - intelligent solutions at Białystok University of Technology, Poland” に参加しました。(The project is implemented within the SPINAKER programme - international intensive programmes run by the polish national agency for academic exchange(NAWA). It provides for the organization of a summer school - “Biometrics - intelligent solutions”.)",
         "URL": "https://pb.edu.pl/iro/nawa-projects/biometrics-intelligent-solutions/",
     },
 ]
