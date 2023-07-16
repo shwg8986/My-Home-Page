@@ -8,7 +8,7 @@ import { Experience } from "../components/layouts/Experience/Experience";
 import { Research } from "../components/layouts/Research/Reaserch";
 import { Programming } from "../components/layouts/Programming/Programming";
 import { Contact } from "../components/layouts/Contact";
-import { Link } from "../components/layouts/Link/Linx";
+import { Link } from "../components/layouts/Link/Link";
 
 export const Home = () => {
     return (
