@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Box, Typography, Grid, Container, Card, CardContent, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
-import { Publications, Exhibitions, ResearchWords } from "./Info";
+import { Journals, Conferences, Exhibitions, ResearchWords } from "./Info";
 import { normalize } from 'path';
 
 const words: string[] = [...ResearchWords]
-const publications = [...Publications]
+const journals = [...Journals]
+const conferences = [...Conferences]
 const exhibitions = [...Exhibitions]
 export const Research = () => {
     return (
@@ -39,6 +40,7 @@ export const Research = () => {
                     ー 研究 ー
                 </Typography>
             </Box>
+
             <Container>
                 <Grid container spacing={1}>
                     <Grid item sx={{
@@ -55,13 +57,13 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Publications and Conferences</TableCell>
+                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Journal Article（学術論文）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {publications.map((publication, index) => (
+                                    {journals.map((journal, index) => (
                                         <TableRow
-                                            key={publication.title}
+                                            key={journal.title}
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
@@ -69,7 +71,48 @@ export const Research = () => {
                                                     fontWeight: 300,
                                                     fontFamily: 'Times New Roman',
                                                 }}>
-                                                {`${publication.title}`}
+                                                {`${journal.title}`}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Grid>
+                </Grid>
+            </Container>
+
+            <Container>
+                <Grid container spacing={1}>
+                    <Grid item sx={{
+                        width: "95%",
+                        m: "20px auto 70px",
+                    }}>
+                        <TableContainer component={Paper}>
+                            <Table
+                                sx={{
+                                    maxWidth: 1000,
+                                    backgroundColor: "#fff",
+                                    color: "#fff"
+                                }}
+                                aria-label="simple table">
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Conference Papers, In Proceedings（学会論文）</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {conferences.map((conference, index) => (
+                                        <TableRow
+                                            key={conference.title}
+                                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                                            <TableCell component="th" scope="row"
+                                                sx={{
+                                                    fontSize: 18,
+                                                    fontWeight: 300,
+                                                    fontFamily: 'Times New Roman',
+                                                }}>
+                                                {`${conference.title}`}
                                             </TableCell>
                                         </TableRow>
                                     ))}
@@ -96,7 +139,7 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Demo Exhibition</TableCell>
+                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Demo Exhibition（デモ展示）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
