@@ -74,6 +74,11 @@ export const Link = () => {
             }} />
           </IconButton>
         </Grid>
+        <Grid item>
+          <IconButton onClick={() => handleLinkClick('https://orcid.org/0000-0002-4264-6753')}>
+            <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_64x64.png" width="40" height="40" />
+          </IconButton>
+        </Grid>
       </Grid>
     </Box >
   )
