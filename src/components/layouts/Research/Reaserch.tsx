@@ -57,7 +57,7 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Journal Article（学術論文）</TableCell>
+                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 20, }}>Journal article（学術論文）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -68,7 +68,7 @@ export const Research = () => {
                                             <TableCell component="th" scope="row"
                                                 sx={{
                                                     fontSize: 18,
-                                                    fontWeight: 300,
+                                                    fontWeight: "100",
                                                     fontFamily: 'Times New Roman',
                                                 }}>
                                                 {`${journal.title}`}
@@ -86,7 +86,7 @@ export const Research = () => {
                 <Grid container spacing={1}>
                     <Grid item sx={{
                         width: "95%",
-                        m: "20px auto 70px",
+                        m: "0px auto 70px",
                     }}>
                         <TableContainer component={Paper}>
                             <Table
@@ -98,7 +98,7 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Conference Papers, In Proceedings（学会論文）</TableCell>
+                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 20, }}>Conference papers（学会論文）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -109,7 +109,7 @@ export const Research = () => {
                                             <TableCell component="th" scope="row"
                                                 sx={{
                                                     fontSize: 18,
-                                                    fontWeight: 300,
+                                                    fontWeight: 100,
                                                     fontFamily: 'Times New Roman',
                                                 }}>
                                                 {`${conference.title}`}
@@ -139,7 +139,7 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 24, }}>Demo Exhibition（デモ展示）</TableCell>
+                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 20, }}>Demo exhibition（デモ展示）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -150,7 +150,7 @@ export const Research = () => {
                                             <TableCell component="th" scope="row"
                                                 sx={{
                                                     fontSize: 18,
-                                                    fontWeight: 300,
+                                                    fontWeight: 100,
                                                     fontFamily: 'Times New Roman',
                                                 }}>
                                                 {`${exhibition.title}`}
