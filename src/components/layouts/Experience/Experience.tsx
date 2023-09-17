@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box, Typography, Link, Container, Accordion, AccordionDetails, AccordionSummary, Grid } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LaunchIcon from '@mui/icons-material/Launch';
 import { ExperienceInfo, ExperienceType } from "./Info";
 
 const rows: ExperienceType[] = [...ExperienceInfo]
@@ -52,24 +53,36 @@ export const Experience = () => {
                                         aria-controls="panel1a-content"
                                         id="panel1a-header"
                                     >
-                                        {row.URL ?
-                                            (<Link sx={{
-                                                color: "#3399ff",
-                                                fontWeight: "#bold",
-                                                textDecoration: "none",
-                                                fontSize: 20,
-                                                fontFamily: "Roboto, Helvetica, Arial, sans-serif",
-                                                ":hover": { color: "#ff9933", cursor: "pointer" },
-                                            }}
-                                                href={row.URL}
-                                                target="_blank">{row.title}
-                                            </Link>
-                                            ) : (
-                                                <Typography sx={{ fontSize: 20, }}>{row.title}</Typography>
-                                            )}
+                                        <Typography
+                                            sx={{
+                                                fontSize: 18,
+                                            }}>
+                                            {row.title}
+                                            {row.URL ? (
+                                                <a href={row.URL} target="_blank" style={{ textDecoration: 'none' }}>
+                                                    <LaunchIcon
+                                                        sx={{
+                                                            color: "#3399ff",
+                                                            fontSize: 18,
+                                                            pl: 1,
+                                                            ":hover": {
+                                                                color: "#ff9933",
+                                                                cursor: "pointer"
+                                                            }
+                                                        }}
+                                                    >
+                                                    </LaunchIcon>
+                                                </a>
+                                            ) : null}
+                                        </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
-                                        <Typography>
+                                        <Typography
+                                            sx={{
+                                                fontWeight: "Bold",
+                                                fontFamily: 'Noto Sans',
+                                                p: "0 0 10px 0",
+                                            }}>
                                             {row.days}
                                         </Typography>
                                         <Typography>
@@ -78,7 +91,8 @@ export const Experience = () => {
                                         {row.content2 ? (
                                             <Typography>
                                                 {row.content2}
-                                            </Typography>) : null}
+                                            </Typography>) : null
+                                        }
                                     </AccordionDetails>
                                 </Accordion>
                             ))}
@@ -95,6 +109,6 @@ export const Experience = () => {
                     </Grid>
                 </Grid>
             </Container>
-        </Box>
+        </Box >
     )
 }
