@@ -67,9 +67,9 @@ export const Research = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 18,
+                                                    fontSize: 16,
                                                     fontWeight: "100",
-                                                    fontFamily: 'Times New Roman',
+                                                    fontFamily: 'Noto Sans',
                                                 }}>
                                                 {`${journal.title}`}
                                             </TableCell>
@@ -108,9 +108,9 @@ export const Research = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 18,
+                                                    fontSize: 16,
                                                     fontWeight: 100,
-                                                    fontFamily: 'Times New Roman',
+                                                    fontFamily: 'Noto Sans',
                                                 }}>
                                                 {`${conference.title}`}
                                             </TableCell>
@@ -149,9 +149,9 @@ export const Research = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 18,
+                                                    fontSize: 16,
                                                     fontWeight: 100,
-                                                    fontFamily: 'Times New Roman',
+                                                    fontFamily: 'Noto Sans',
                                                 }}>
                                                 {`${exhibition.title}`}
                                             </TableCell>
