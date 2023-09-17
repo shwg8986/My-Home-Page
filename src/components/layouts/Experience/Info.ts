@@ -10,7 +10,7 @@ export const ExperienceInfo = [
     {
         "title": "株式会社Techouse",
         "days": "2022/6〜2022/10",
-        "content": "TypeScript（React）を使ったフロントエンドのエンジニアインターンをしていました。",
+        "content": "TypeScript(React)を使ったフロントエンドのエンジニアインターンをしていました。",
         "URL": "https://www.techouse.jp/",
     },
     {
@@ -20,7 +20,7 @@ export const ExperienceInfo = [
         "content2": "業務内容：ロボットアームを用いた遠隔作業システムの開発。",
     },
     {
-        "title": "リサーチアシスタント（RA）: 第一次",
+        "title": "リサーチアシスタント(RA): 第一次",
         "days": "2022/8〜2023/2",
         "content": "東京都立大学 情報科学域 ヤェムヴィボル助教のバーチャルリアリティに関する研究開発のアシスタントをしていました。",
         "content2": "業務内容：ロボットアームを用いた遠隔作業システムの開発, VR酔い検出手法の探求。",
@@ -32,7 +32,7 @@ export const ExperienceInfo = [
         "URL": "https://www.tv-tokyo.co.jp/",
     },
     {
-        "title": "リサーチアシスタント（RA）: 第ニ次",
+        "title": "リサーチアシスタント(RA): 第ニ次",
         "days": "2023/5〜current",
         "content": "筑波大学 システム情報系 ヤェムヴィボル准教授のバーチャルリアリティに関する研究開発のアシスタントをしています。",
     },
