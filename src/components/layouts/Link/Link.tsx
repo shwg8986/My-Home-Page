@@ -79,6 +79,11 @@ export const Link = () => {
             <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_64x64.png" width="40" height="40" />
           </IconButton>
         </Grid>
+        <Grid item>
+          <IconButton onClick={() => handleLinkClick('https://www.researchgate.net/profile/Shogo-Shimada-2')}>
+            <img alt="Research Gate Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1280px-ResearchGate_icon_SVG.svg.png" width="40" height="40" />
+          </IconButton>
+        </Grid>
       </Grid>
     </Box >
   )
