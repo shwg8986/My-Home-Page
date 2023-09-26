@@ -58,8 +58,9 @@ export const Certifications = () => {
                                         <TableCell
                                             sx={{
                                                 color: "#000",
-                                                fontWeight: "800",
+                                                fontWeight: "500",
                                                 fontSize: 18,
+                                                p: "16px",
                                                 "@media screen and (max-width: 420px)": {
                                                     fontSize: 16,
                                                 },
@@ -67,7 +68,7 @@ export const Certifications = () => {
                                         <TableCell align="left"
                                             sx={{
                                                 color: "#000",
-                                                fontWeight: "800",
+                                                fontWeight: "500",
                                                 fontSize: 18,
                                                 "@media screen and (max-width: 420px)": {
                                                     fontSize: 16,
@@ -84,10 +85,10 @@ export const Certifications = () => {
                                             <TableCell component="th" scope="row"
                                                 sx={{
                                                     fontSize: 16,
+                                                    fontWeight: "normal",
                                                     "@media screen and (max-width: 420px)": {
                                                         fontSize: 14,
                                                     },
-                                                    fontWeight: "normal"
                                                 }}>
                                                 {row.Dates}
                                             </TableCell>
@@ -95,11 +96,10 @@ export const Certifications = () => {
                                                 sx={{
                                                     color: "#000",
                                                     fontSize: 16,
+                                                    fontWeight: "normal",
                                                     "@media screen and (max-width: 420px)": {
                                                         fontSize: 14,
                                                     },
-                                                    fontWeight: "100",
-                                                    fontFamily: 'Noto Sans',
                                                 }}>{row.Certifications}</TableCell>
                                         </TableRow>
                                     ))}

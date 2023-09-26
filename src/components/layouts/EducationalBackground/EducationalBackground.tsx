@@ -58,18 +58,16 @@ export const EducationalBackground = () => {
                                     <TableRow>
                                         <TableCell sx={{
                                             color: "#000",
-                                            fontWeight: "800",
+                                            fontWeight: "500",
                                             fontSize: 18,
-                                            fontFamily: 'Noto Sans',
                                             "@media screen and (max-width: 420px)": {
                                                 fontSize: 16,
                                             },
                                         }}>日付</TableCell>
                                         <TableCell align="left" sx={{
                                             color: "#000",
-                                            fontWeight: "800",
+                                            fontWeight: "500",
                                             fontSize: 18,
-                                            fontFamily: 'Noto Sans',
                                             "@media screen and (max-width: 420px)": {
                                                 fontSize: 16,
                                             },
@@ -84,7 +82,6 @@ export const EducationalBackground = () => {
                                             <TableCell component="th" scope="row"
                                                 sx={{
                                                     fontSize: 16,
-                                                    fontFamily: 'Noto Sans',
                                                     "@media screen and (max-width: 420px)": {
                                                         fontSize: 14,
                                                     },
@@ -95,7 +92,6 @@ export const EducationalBackground = () => {
                                                 sx={{
                                                     color: "#000",
                                                     fontSize: 16,
-                                                    fontFamily: 'Noto Sans',
                                                     "@media screen and (max-width: 420px)": {
                                                         fontSize: 14,
                                                     },

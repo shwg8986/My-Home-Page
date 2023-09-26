@@ -50,7 +50,6 @@ export const Awards = () => {
                             fontSize: 14,
                         },
                         fontWeight: "100",
-                        fontFamily: 'Noto Sans',
                         textAlign: "center",
                         mt: 5,
                     }}>

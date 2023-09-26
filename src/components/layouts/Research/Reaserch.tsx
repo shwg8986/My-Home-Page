@@ -215,17 +215,20 @@ export const Research = () => {
                     }}>
                         {words.map((word) => (
                             <Card key={word} sx={{
-                                width: 200,
-                                height: 50,
                                 m: "0 0px 10px 0px",
                                 borderRadius: 90,
                                 textAlign: "center",
+                                width: 200,
+                                height: 50,
+                                "@media screen and (max-width: 420px)": {
+                                    width: 165,
+                                    height: 50,
+                                },
                             }}>
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div"
                                         sx={{
                                             fontWeight: 100,
-                                            fontFamily: 'Noto Sans',
                                             fontSize: 16,
                                             m: 0,
                                             "@media screen and (max-width: 420px)": {

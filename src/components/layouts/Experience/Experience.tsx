@@ -56,7 +56,6 @@ export const Experience = () => {
                                         <Typography
                                             sx={{
                                                 fontSize: 18,
-                                                fontFamily: 'Noto Sans',
                                                 "@media screen and (max-width: 420px)": {
                                                     fontSize: 14,
                                                 },
