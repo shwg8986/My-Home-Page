@@ -59,19 +59,19 @@ export const Certifications = () => {
                                             sx={{
                                                 color: "#000",
                                                 fontWeight: "500",
-                                                fontSize: 18,
+                                                fontSize: 16,
                                                 p: "16px",
                                                 "@media screen and (max-width: 420px)": {
-                                                    fontSize: 16,
+                                                    fontSize: 14,
                                                 },
                                             }}>年月</TableCell>
                                         <TableCell align="left"
                                             sx={{
                                                 color: "#000",
                                                 fontWeight: "500",
-                                                fontSize: 18,
+                                                fontSize: 16,
                                                 "@media screen and (max-width: 420px)": {
-                                                    fontSize: 16,
+                                                    fontSize: 14,
                                                 },
                                             }}>試験</TableCell>
                                     </TableRow>
@@ -87,7 +87,7 @@ export const Certifications = () => {
                                                     fontSize: 16,
                                                     fontWeight: "normal",
                                                     "@media screen and (max-width: 420px)": {
-                                                        fontSize: 14,
+                                                        fontSize: 15,
                                                     },
                                                 }}>
                                                 {row.Dates}

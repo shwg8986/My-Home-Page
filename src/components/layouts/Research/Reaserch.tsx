@@ -63,7 +63,7 @@ export const Research = () => {
                                             color: "#000",
                                             fontSize: 20,
                                             "@media screen and (max-width: 420px)": {
-                                                fontSize: 16,
+                                                fontSize: 18,
                                             },
                                         }}>Journal article（学術論文）</TableCell>
                                     </TableRow>
@@ -115,7 +115,7 @@ export const Research = () => {
                                             color: "#000",
                                             fontSize: 20,
                                             "@media screen and (max-width: 420px)": {
-                                                fontSize: 16,
+                                                fontSize: 18,
                                             },
                                         }}>Conference papers（学会論文）</TableCell>
                                     </TableRow>
@@ -167,7 +167,7 @@ export const Research = () => {
                                             color: "#000",
                                             fontSize: 20,
                                             "@media screen and (max-width: 420px)": {
-                                                fontSize: 16,
+                                                fontSize: 18,
                                             },
                                         }}>Demo exhibition（デモ展示）</TableCell>
                                     </TableRow>
@@ -202,6 +202,9 @@ export const Research = () => {
                     textAlign: "center",
                     mb: 3,
                     fontSize: 22,
+                    "@media screen and (max-width: 420px)": {
+                        fontSize: 18,
+                    },
                 }}>
                     研究キーワード
                 </Typography>
@@ -228,7 +231,7 @@ export const Research = () => {
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="div"
                                         sx={{
-                                            fontWeight: 100,
+                                            fontWeight: 300,
                                             fontSize: 16,
                                             m: 0,
                                             "@media screen and (max-width: 420px)": {

@@ -59,17 +59,17 @@ export const EducationalBackground = () => {
                                         <TableCell sx={{
                                             color: "#000",
                                             fontWeight: "500",
-                                            fontSize: 18,
+                                            fontSize: 16,
                                             "@media screen and (max-width: 420px)": {
-                                                fontSize: 16,
+                                                fontSize: 14,
                                             },
-                                        }}>日付</TableCell>
+                                        }}>年月</TableCell>
                                         <TableCell align="left" sx={{
                                             color: "#000",
                                             fontWeight: "500",
-                                            fontSize: 18,
+                                            fontSize: 16,
                                             "@media screen and (max-width: 420px)": {
-                                                fontSize: 16,
+                                                fontSize: 14,
                                             },
                                         }}>学校</TableCell>
                                     </TableRow>
@@ -83,7 +83,7 @@ export const EducationalBackground = () => {
                                                 sx={{
                                                     fontSize: 16,
                                                     "@media screen and (max-width: 420px)": {
-                                                        fontSize: 14,
+                                                        fontSize: 15,
                                                     },
                                                 }}>
                                                 {row.Dates}
