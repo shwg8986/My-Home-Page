@@ -63,7 +63,7 @@ export const EducationalBackground = () => {
                                             "@media screen and (max-width: 420px)": {
                                                 fontSize: 14,
                                             },
-                                        }}>年月</TableCell>
+                                        }}>年/月</TableCell>
                                         <TableCell align="left" sx={{
                                             color: "#000",
                                             fontWeight: "500",
@@ -83,7 +83,7 @@ export const EducationalBackground = () => {
                                                 sx={{
                                                     fontSize: 16,
                                                     "@media screen and (max-width: 420px)": {
-                                                        fontSize: 15,
+                                                        fontSize: 14,
                                                     },
                                                 }}>
                                                 {row.Dates}

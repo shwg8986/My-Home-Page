@@ -64,7 +64,7 @@ export const Certifications = () => {
                                                 "@media screen and (max-width: 420px)": {
                                                     fontSize: 14,
                                                 },
-                                            }}>年月</TableCell>
+                                            }}>年/月</TableCell>
                                         <TableCell align="left"
                                             sx={{
                                                 color: "#000",
@@ -87,7 +87,7 @@ export const Certifications = () => {
                                                     fontSize: 16,
                                                     fontWeight: "normal",
                                                     "@media screen and (max-width: 420px)": {
-                                                        fontSize: 15,
+                                                        fontSize: 14,
                                                     },
                                                 }}>
                                                 {row.Dates}
