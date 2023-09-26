@@ -56,8 +56,24 @@ export const EducationalBackground = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ color: "#000", fontSize: 20, }}>日付</TableCell>
-                                        <TableCell align="left" sx={{ color: "#000", fontSize: 20 }}>学校</TableCell>
+                                        <TableCell sx={{
+                                            color: "#000",
+                                            fontWeight: "800",
+                                            fontSize: 18,
+                                            fontFamily: 'Noto Sans',
+                                            "@media screen and (max-width: 420px)": {
+                                                fontSize: 16,
+                                            },
+                                        }}>日付</TableCell>
+                                        <TableCell align="left" sx={{
+                                            color: "#000",
+                                            fontWeight: "800",
+                                            fontSize: 18,
+                                            fontFamily: 'Noto Sans',
+                                            "@media screen and (max-width: 420px)": {
+                                                fontSize: 16,
+                                            },
+                                        }}>学校</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -67,15 +83,22 @@ export const EducationalBackground = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 18,
+                                                    fontSize: 16,
+                                                    fontFamily: 'Noto Sans',
+                                                    "@media screen and (max-width: 420px)": {
+                                                        fontSize: 14,
+                                                    },
                                                 }}>
                                                 {row.Dates}
                                             </TableCell>
                                             <TableCell align="left"
                                                 sx={{
                                                     color: "#000",
-                                                    fontSize: 18,
-                                                    fontWeight: "Light"
+                                                    fontSize: 16,
+                                                    fontFamily: 'Noto Sans',
+                                                    "@media screen and (max-width: 420px)": {
+                                                        fontSize: 14,
+                                                    },
                                                 }}>
                                                 {row.schools}
                                             </TableCell>

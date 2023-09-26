@@ -56,6 +56,10 @@ export const Experience = () => {
                                         <Typography
                                             sx={{
                                                 fontSize: 18,
+                                                fontFamily: 'Noto Sans',
+                                                "@media screen and (max-width: 420px)": {
+                                                    fontSize: 14,
+                                                },
                                             }}>
                                             {row.title}
                                             {row.URL ? (
@@ -81,15 +85,33 @@ export const Experience = () => {
                                             sx={{
                                                 fontWeight: "Bold",
                                                 fontFamily: 'Noto Sans',
+                                                fontSize: 16,
+                                                "@media screen and (max-width: 420px)": {
+                                                    fontSize: 14,
+                                                },
                                                 p: "0 0 10px 0",
                                             }}>
                                             {row.days}
                                         </Typography>
-                                        <Typography>
+                                        <Typography
+                                            sx={{
+                                                fontFamily: 'Noto Sans',
+                                                fontSize: 16,
+                                                "@media screen and (max-width: 420px)": {
+                                                    fontSize: 14,
+                                                },
+                                            }}>
                                             {row.content}
                                         </Typography>
                                         {row.content2 ? (
-                                            <Typography>
+                                            <Typography
+                                                sx={{
+                                                    fontFamily: 'Noto Sans',
+                                                    fontSize: 16,
+                                                    "@media screen and (max-width: 420px)": {
+                                                        fontSize: 14,
+                                                    },
+                                                }}>
                                                 {row.content2}
                                             </Typography>) : null
                                         }

@@ -1,8 +1,8 @@
 function createData(
     Dates: string,
-    schools: string,
+    Certifications: string,
 ) {
-    return { Dates, schools };
+    return { Dates, Certifications };
 }
 
 export const CertificationsInfo = [

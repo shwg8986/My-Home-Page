@@ -41,7 +41,9 @@ export const Contact = () => {
                 sx={{
                     m: "0 10%",
                     fontSize: 20,
-                    fontWeight: "normal",
+                    "@media screen and (max-width: 420px)": {
+                        fontSize: 18,
+                    },
                     textAlign: "center",
                     mt: 7,
                 }}>
@@ -52,6 +54,10 @@ export const Contact = () => {
                 sx={{
                     m: "0 10%",
                     fontSize: 16,
+                    "@media screen and (max-width: 420px)": {
+                        fontSize: 14,
+                    },
+                    fontFamily: 'Noto Sans',
                     fontWeight: "light",
                     textAlign: "center",
                     mt: 1,

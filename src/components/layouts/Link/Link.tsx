@@ -7,6 +7,32 @@ export const Link = () => {
   const handleLinkClick = (url: string) => {
     window.open(url, '_blank');
   };
+
+  function adjustLogoSize(logoId: string, smallSize: number, defaultSize: number): void {
+    const logo: HTMLElement | null = document.getElementById(logoId);
+    if (logo) {
+      if (window.innerWidth <= 420) {
+        logo.setAttribute('width', `${smallSize}`);
+        logo.setAttribute('height', `${smallSize}`);
+      } else {
+        logo.setAttribute('width', `${defaultSize}`);
+        logo.setAttribute('height', `${defaultSize}`);
+      }
+    }
+  }
+
+  window.addEventListener('load', function () {
+    adjustLogoSize('orcid-logo', 30, 40);
+    adjustLogoSize('researchGate-logo', 30, 40);
+  });
+
+  window.addEventListener('resize', function () {
+    adjustLogoSize('orcid-logo', 30, 40);
+    adjustLogoSize('researchGate-logo', 30, 40);
+  });
+
+
+
   return (
     <Box sx={{
       width: "100%",
@@ -19,7 +45,7 @@ export const Link = () => {
     }}>
       <Grid sx={{ flexGrow: 1 }} container spacing={3}>
         <Grid item sx={{
-          m: "0 9%",
+          m: "0 5%",
         }}>
           <Typography
             component="h1"
@@ -49,6 +75,9 @@ export const Link = () => {
           <IconButton onClick={() => handleLinkClick('https://www.instagram.com/shwg_2.0.929/')}>
             <Instagram sx={{
               fontSize: 40,
+              "@media screen and (max-width: 420px)": {
+                fontSize: 30,
+              },
               color: pink[500]
             }} />
           </IconButton>
@@ -57,31 +86,44 @@ export const Link = () => {
           <IconButton onClick={() => handleLinkClick('https://twitter.com/au_tr_')}>
             <Twitter sx={{
               fontSize: 40,
+              "@media screen and (max-width: 420px)": {
+                fontSize: 30,
+              },
               color: blue[500]
             }} />
           </IconButton>
         </Grid>
         <Grid item>
           <IconButton onClick={() => handleLinkClick('https://www.linkedin.com/in/shimada-shogo/')}>
-            <LinkedIn sx={{ fontSize: 40, color: blue[900] }} />
+            <LinkedIn sx={{
+              fontSize: 40,
+              "@media screen and (max-width: 420px)": {
+                fontSize: 30,
+              },
+              color: blue[900]
+            }} />
           </IconButton>
         </Grid>
         <Grid item>
           <IconButton onClick={() => handleLinkClick('https://github.com/shwg8986')}>
             <GitHub sx={{
               fontSize: 40,
+              "@media screen and (max-width: 420px)": {
+                fontSize: 30,
+              },
               color: "#000"
             }} />
           </IconButton>
         </Grid>
         <Grid item>
           <IconButton onClick={() => handleLinkClick('https://orcid.org/0000-0002-4264-6753')}>
-            <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_64x64.png" width="40" height="40" />
+            <img id="orcid-logo" alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_64x64.png" width="40" height="40"
+            />
           </IconButton>
         </Grid>
         <Grid item>
           <IconButton onClick={() => handleLinkClick('https://www.researchgate.net/profile/Shogo-Shimada-2')}>
-            <img alt="Research Gate Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1280px-ResearchGate_icon_SVG.svg.png" width="40" height="40" />
+            <img id="researchGate-logo" alt="Research Gate Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1280px-ResearchGate_icon_SVG.svg.png" width="40" height="40" />
           </IconButton>
         </Grid>
       </Grid>

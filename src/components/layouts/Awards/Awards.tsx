@@ -44,9 +44,13 @@ export const Awards = () => {
                 <Typography key={row}
                     component="p"
                     sx={{
-                        m: "0 10%",
-                        fontSize: 20,
-                        fontWeight: "normal",
+                        m: "0 5%",
+                        fontSize: 18,
+                        "@media screen and (max-width: 420px)": {
+                            fontSize: 14,
+                        },
+                        fontWeight: "100",
+                        fontFamily: 'Noto Sans',
                         textAlign: "center",
                         mt: 5,
                     }}>

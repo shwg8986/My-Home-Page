@@ -57,7 +57,15 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 20, }}>Journal article（学術論文）</TableCell>
+                                        <TableCell sx={{
+                                            fontFamily: "Times New Roman",
+                                            fontWeight: 800,
+                                            color: "#000",
+                                            fontSize: 20,
+                                            "@media screen and (max-width: 420px)": {
+                                                fontSize: 16,
+                                            },
+                                        }}>Journal article（学術論文）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -67,9 +75,12 @@ export const Research = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 16,
                                                     fontWeight: "100",
                                                     fontFamily: 'Noto Sans',
+                                                    fontSize: 16,
+                                                    "@media screen and (max-width: 420px)": {
+                                                        fontSize: 14,
+                                                    },
                                                 }}>
                                                 {`${journal.title}`}
                                             </TableCell>
@@ -98,7 +109,15 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 20, }}>Conference papers（学会論文）</TableCell>
+                                        <TableCell sx={{
+                                            fontFamily: "Times New Roman",
+                                            fontWeight: 800,
+                                            color: "#000",
+                                            fontSize: 20,
+                                            "@media screen and (max-width: 420px)": {
+                                                fontSize: 16,
+                                            },
+                                        }}>Conference papers（学会論文）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -108,9 +127,12 @@ export const Research = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 16,
                                                     fontWeight: 100,
                                                     fontFamily: 'Noto Sans',
+                                                    fontSize: 16,
+                                                    "@media screen and (max-width: 420px)": {
+                                                        fontSize: 14,
+                                                    },
                                                 }}>
                                                 {`${conference.title}`}
                                             </TableCell>
@@ -139,7 +161,15 @@ export const Research = () => {
                                 aria-label="simple table">
                                 <TableHead>
                                     <TableRow>
-                                        <TableCell sx={{ fontFamily: "Times New Roman", fontWeight: 800, color: "#000", fontSize: 20, }}>Demo exhibition（デモ展示）</TableCell>
+                                        <TableCell sx={{
+                                            fontFamily: "Times New Roman",
+                                            fontWeight: 800,
+                                            color: "#000",
+                                            fontSize: 20,
+                                            "@media screen and (max-width: 420px)": {
+                                                fontSize: 16,
+                                            },
+                                        }}>Demo exhibition（デモ展示）</TableCell>
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
@@ -149,9 +179,12 @@ export const Research = () => {
                                             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                             <TableCell component="th" scope="row"
                                                 sx={{
-                                                    fontSize: 16,
                                                     fontWeight: 100,
                                                     fontFamily: 'Noto Sans',
+                                                    fontSize: 16,
+                                                    "@media screen and (max-width: 420px)": {
+                                                        fontSize: 14,
+                                                    },
                                                 }}>
                                                 {`${exhibition.title}`}
                                             </TableCell>
@@ -184,14 +217,21 @@ export const Research = () => {
                             <Card key={word} sx={{
                                 width: 200,
                                 height: 50,
-                                m: "0 5px 10px 5px",
+                                m: "0 0px 10px 0px",
                                 borderRadius: 90,
                                 textAlign: "center",
                             }}>
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div" sx={{
-                                        fontSize: 16,
-                                    }}>
+                                    <Typography gutterBottom variant="h5" component="div"
+                                        sx={{
+                                            fontWeight: 100,
+                                            fontFamily: 'Noto Sans',
+                                            fontSize: 16,
+                                            m: 0,
+                                            "@media screen and (max-width: 420px)": {
+                                                fontSize: 14,
+                                            },
+                                        }}>
                                         {word}
                                     </Typography>
                                 </CardContent>
