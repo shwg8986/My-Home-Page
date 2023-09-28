@@ -103,8 +103,8 @@ export const Profile = () => {
                                     }}
                                     href="https://www.comp.sd.tmu.ac.jp/nishilab"
                                     target="_blank"
-                                >西内研究室(B4~)
-                                </Link> &
+                                >西内
+                                </Link> 研究室(B4~) &
                                 <Link
                                     sx={{
                                         color: "#99ff33",
@@ -114,8 +114,20 @@ export const Profile = () => {
                                     }}
                                     href="https://sites.google.com/view/vibolyem/home?authuser=0"
                                     target="_blank"
-                                >ヤェム研究室(M1~)
-                                </Link><br /><br />
+                                >ヤェム
+                                </Link> •
+                                <Link
+                                    sx={{
+                                        color: "#99ff33",
+                                        textDecoration: "none",
+                                        ml: 1,
+                                        ":hover": { color: "#3399ff", cursor: "pointer" },
+                                    }}
+                                    href="https://www.u-tokyo.ac.jp/focus/ja/people/k0001_03309.html"
+                                    target="_blank"
+                                >池井
+                                </Link> 研究室(M1~)
+                                <br /><br />
                                 生まれ: 1999年 神奈川県
                             </Typography>
                         </Box>
