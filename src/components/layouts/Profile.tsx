@@ -92,13 +92,13 @@ export const Profile = () => {
                                         fontSize: 15,
                                     },
                                 }}>
-                                東京都立大学大学院 システムデザイン研究科 情報科学域 <br />
-                                修士課程2年
+                                東京都立大学大学院 システムデザイン研究科<br />
+                                情報科学域 修士課程2年<br /><br />
                                 <Link
                                     sx={{
                                         color: "#99ff33",
                                         textDecoration: "none",
-                                        ml: 1,
+                                        ml: 0,
                                         ":hover": { color: "#3399ff", cursor: "pointer" },
                                     }}
                                     href="https://www.comp.sd.tmu.ac.jp/nishilab"
@@ -109,23 +109,23 @@ export const Profile = () => {
                                     sx={{
                                         color: "#99ff33",
                                         textDecoration: "none",
-                                        ml: 1,
+                                        ml: 0,
                                         ":hover": { color: "#3399ff", cursor: "pointer" },
                                     }}
                                     href="https://sites.google.com/view/vibolyem/home?authuser=0"
                                     target="_blank"
-                                >ヤェム
+                                > ヤェム
                                 </Link> •
                                 <Link
                                     sx={{
                                         color: "#99ff33",
                                         textDecoration: "none",
-                                        ml: 1,
+                                        ml: 0,
                                         ":hover": { color: "#3399ff", cursor: "pointer" },
                                     }}
                                     href="https://www.u-tokyo.ac.jp/focus/ja/people/k0001_03309.html"
                                     target="_blank"
-                                >池井
+                                > 池井
                                 </Link> 研究室(M1~)
                                 <br /><br />
                                 生まれ: 1999年 神奈川県
