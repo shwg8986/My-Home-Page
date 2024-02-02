@@ -126,6 +126,11 @@ export const Link = () => {
             <img id="researchGate-logo" alt="Research Gate Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1280px-ResearchGate_icon_SVG.svg.png" width="40" height="40" />
           </IconButton>
         </Grid>
+        <Grid item>
+          <IconButton onClick={() => handleLinkClick('https://oncyber.io/shwgallery_')}>
+            <img id="oncyber-logo" alt="OnCyber Logo" src="https://styles.redditmedia.com/t5_4rq3b2/styles/communityIcon_j15f3tm4jrb71.png" width="40" height="40" />
+          </IconButton>
+        </Grid>
       </Grid>
     </Box >
   )
