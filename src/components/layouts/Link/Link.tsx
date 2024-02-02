@@ -128,7 +128,13 @@ export const Link = () => {
         </Grid>
         <Grid item>
           <IconButton onClick={() => handleLinkClick('https://oncyber.io/shwgallery_')}>
-            <img id="oncyber-logo" alt="OnCyber Logo" src="https://styles.redditmedia.com/t5_4rq3b2/styles/communityIcon_j15f3tm4jrb71.png" width="40" height="40" />
+            <img id="oncyber-logo" alt="OnCyber Logo" src="https://styles.redditmedia.com/t5_4rq3b2/styles/communityIcon_j15f3tm4jrb71.png"
+              style={{
+                width: '40px',
+                height: '40px',
+                borderRadius: '50%',
+                objectFit: 'cover',
+              }} />
           </IconButton>
         </Grid>
       </Grid>
