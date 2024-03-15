@@ -92,9 +92,12 @@ export const Profile = () => {
                                         fontSize: 15,
                                     },
                                 }}>
-                                東京都立大学大学院 システムデザイン研究科<br />
-                                情報科学域 修士課程2年<br /><br />
-                                <Link
+                                修士（情報科学）,<br />
+                                Master of Computer Science.<br /><br />
+
+                                Engineer.<br /><br />
+
+                                {/* <Link
                                     sx={{
                                         color: "#99ff33",
                                         textDecoration: "none",
@@ -127,7 +130,7 @@ export const Profile = () => {
                                     target="_blank"
                                 > 池井
                                 </Link> 研究室(M1~)
-                                <br /><br />
+                                <br /><br /> */}
                                 生まれ: 1999年 神奈川県
                             </Typography>
                         </Box>
