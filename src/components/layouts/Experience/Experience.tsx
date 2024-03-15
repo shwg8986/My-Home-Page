@@ -117,7 +117,7 @@ export const Experience = () => {
                                     </AccordionDetails>
                                 </Accordion>
                             ))}
-                            <Accordion disabled>
+                            {/* <Accordion disabled>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel3a-content"
@@ -125,7 +125,7 @@ export const Experience = () => {
                                 >
                                     <Typography>Next... from 2024</Typography>
                                 </AccordionSummary>
-                            </Accordion>
+                            </Accordion> */}
                         </div>
                     </Grid>
                 </Grid>
