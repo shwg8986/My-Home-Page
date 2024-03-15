@@ -197,7 +197,7 @@ export const Research = () => {
                 </Grid>
             </Container>
 
-            <Container>
+            {/* <Container>
                 <Typography gutterBottom variant="h5" component="div" sx={{
                     textAlign: "center",
                     mb: 3,
@@ -245,7 +245,7 @@ export const Research = () => {
                         ))}
                     </Grid>
                 </Grid>
-            </Container>
+            </Container> */}
         </Box >
     )
 }
