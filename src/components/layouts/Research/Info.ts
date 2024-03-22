@@ -46,10 +46,12 @@ function createData(
 }
 
 export const Journals = [
-    createData('S. Shimada, P. Pannattee, Y. Ikei, N. Nishiuchi and V. Yem, "High-frequency cybersickness prediction using deep learning techniques with eye-related indices," in IEEE Access, vol. 11, pp. 95825-95839, 2023. doi:10.1109/ACCESS.2023.3312216 [査読あり]'),
+    createData('S. Shimada, P. Pannattee, Y. Ikei, N. Nishiuchi and V. Yem, "High-frequency cybersickness prediction using deep learning techniques with eye-related indices," in IEEE Access, vol. 11, pp. 95825-95839, 2023. doi:10.1109/ACCESS.2023.3312216'),
 ];
 
 export const Conferences = [
+
+    createData('小島優希也*, 島田匠悟, 岡本正吾, ヤェムヴィボル, 池井寧. "遠隔ロボットの多重身体性に関する研究," 映情学技報, vol. 48, no. 12, pp. 57-60, Mar 15, 2024. [査読なし]'),
 
     createData('P. Pannattee*, S. Shimada, V. Yem and N. Nishiuchi. "Investigating the use of machine learning methods for levels of sense of presence classification based on eye tracking data," Computer Information Systems and Industrial Management (CISIM), Springer, Cham, vol. 14164, 2023. doi:10.1007/978-3-031-42823-4_35 [査読あり]'),
 
