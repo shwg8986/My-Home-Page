@@ -94,9 +94,6 @@ export const Profile = () => {
                                 }}>
                                 修士（情報科学）,<br />
                                 Master of Computer Science.<br /><br />
-
-                                Engineer.<br /><br />
-
                                 {/* <Link
                                     sx={{
                                         color: "#99ff33",
