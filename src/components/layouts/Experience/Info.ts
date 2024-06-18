@@ -45,7 +45,7 @@ export const ExperienceInfo = [
     {
         "title": "KDDI株式会社",
         "days": "2024/4〜current",
-        "content": "Engineer.",
+        "content": "ソフトウェアエンジニア。研修中。",
         "URL": "https://www.kddi.com/",
     },
 ]
