@@ -1,5 +1,3 @@
-import { create } from "domain";
-
 export type ResearchImagesType = {
   original: string;
   thumbnail: string;
