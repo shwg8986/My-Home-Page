@@ -9,6 +9,7 @@ import { Research } from "../components/Research/Reaserch";
 // import { Programming } from "../components/Programming/Programming";
 // import { Contact } from "../components/Contact";
 import { Link } from "../components/Link/Link";
+import ScrollTop from "../ui-elements/ScrollTop";
 
 export const Home = () => {
   return (
@@ -24,6 +25,7 @@ export const Home = () => {
       {/* <Contact /> */}
       <Link />
       <Footer />
+      <ScrollTop />
     </>
   );
 };
