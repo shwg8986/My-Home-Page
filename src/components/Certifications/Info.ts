@@ -14,12 +14,13 @@ export const CertificationsInfo = [
     "2024/2",
     "バーチャルリアリティ技術者認定試験 アプリケーションコース, 日本VR学会"
   ),
+  createData("2024/2", "上級バーチャルリアリティ技術者, 日本VR学会"),
   createData("2024/5", "G検定, 一般社団法人日本ディープラーニング協会"),
   createData("2024/6", "第一級陸上特殊無線技士, 公益財団法人 日本無線協会"),
   createData("2024/9", "SnowPro Core (COF-CO2), Snowflake."),
   createData(
     "2024/10",
-    "AWS Certified Cloud Practitioner (COF-CO2), Amazon Web Services (AWS)."
+    "AWS Certified Cloud Practitioner (CLF-C02), Amazon Web Services (AWS)."
   ),
   createData("2024/12", "Registered Scrum Master®, Scrum Inc."),
   createData("2024/12", "LinuC Level-1 Certification, LPI-Japan."),
