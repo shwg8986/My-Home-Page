@@ -11,7 +11,7 @@ export const ExperienceInfo = [
     title: "株式会社Techouse",
     days: "2022/6〜2022/10",
     content:
-      "TypeScript(React)を使ったフロントエンドのエンジニアインターンをしていました。",
+      "Webフロントエンドのエンジニアとして、学生インターンをしていました。技術スタック: TypeScript(React), GraphQL, Docker",
     URL: "https://www.techouse.jp/",
   },
   {

@@ -56,7 +56,7 @@ export const Experience = () => {
           <Grid
             item
             sx={{
-              width: "90%",
+              width: "95%",
               m: "0 auto",
             }}
           >
