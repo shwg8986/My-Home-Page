@@ -49,10 +49,10 @@ export const Awards = () => {
           <Typography
             component="h2"
             sx={{
-              color: "gray",
+              color: "#gray",
               fontSize: 14,
               fontWeight: "Light",
-              ml: 6,
+              ml: 4,
             }}
           >
             ー 受賞 ー
