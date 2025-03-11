@@ -6,25 +6,24 @@ import { Certifications } from "../components/Certifications/Certifications";
 import { EducationalBackground } from "../components/EducationalBackground/EducationalBackground";
 import { Experience } from "../components/Experience/Experience";
 import { Research } from "../components/Research/Reaserch";
-import { Programming } from "../components/Programming/Programming";
-import { Contact } from "../components/Contact";
+// import { Programming } from "../components/Programming/Programming";
+// import { Contact } from "../components/Contact";
 import { Link } from "../components/Link/Link";
 
 export const Home = () => {
-    return (
-        <>
-            <ResponsiveAppBar />
-            <Profile />
-            <EducationalBackground />
-            <Experience />
-            <Research />
-            <Programming />
-            <Certifications />
-            <Awards />
-            <Contact />
-            <Link />
-            <Footer />
-        </>
-    );
-
-}
+  return (
+    <>
+      <ResponsiveAppBar />
+      <Profile />
+      <EducationalBackground />
+      <Experience />
+      <Research />
+      {/* <Programming /> */}
+      <Certifications />
+      <Awards />
+      {/* <Contact /> */}
+      <Link />
+      <Footer />
+    </>
+  );
+};

@@ -25,7 +25,7 @@ export const Certifications = () => {
         borderStyle: "solid",
         borderColor: "rgba(194, 224, 255, 0.08)",
         borderWidth: "0px 0px thin",
-        backgroundColor: "snow",
+        backgroundColor: "#fff",
       }}
     >
       <Grid sx={{ flexGrow: 1, mb: 5 }} container spacing={3}>
@@ -64,7 +64,7 @@ export const Certifications = () => {
           <Grid
             item
             sx={{
-              width: "90%",
+              width: "95%",
               m: "0 auto",
             }}
           >

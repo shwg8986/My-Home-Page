@@ -1,52 +1,59 @@
 import { Box, Typography, Grid } from "@mui/material";
-import { IconButton } from '@mui/material';
-import { Instagram, Twitter, LinkedIn, GitHub } from '@mui/icons-material';
-import { pink, blue } from '@mui/material/colors';
+import { IconButton } from "@mui/material";
+import { Instagram, Twitter, LinkedIn, GitHub } from "@mui/icons-material";
+import { pink, blue } from "@mui/material/colors";
 
 export const Link = () => {
   const handleLinkClick = (url: string) => {
-    window.open(url, '_blank');
+    window.open(url, "_blank");
   };
 
-  function adjustLogoSize(logoId: string, smallSize: number, defaultSize: number): void {
+  function adjustLogoSize(
+    logoId: string,
+    smallSize: number,
+    defaultSize: number
+  ): void {
     const logo: HTMLElement | null = document.getElementById(logoId);
     if (logo) {
       if (window.innerWidth <= 420) {
-        logo.setAttribute('width', `${smallSize}`);
-        logo.setAttribute('height', `${smallSize}`);
+        logo.setAttribute("width", `${smallSize}`);
+        logo.setAttribute("height", `${smallSize}`);
       } else {
-        logo.setAttribute('width', `${defaultSize}`);
-        logo.setAttribute('height', `${defaultSize}`);
+        logo.setAttribute("width", `${defaultSize}`);
+        logo.setAttribute("height", `${defaultSize}`);
       }
     }
   }
 
-  window.addEventListener('load', function () {
-    adjustLogoSize('orcid-logo', 30, 40);
-    adjustLogoSize('researchGate-logo', 30, 40);
+  window.addEventListener("load", function () {
+    adjustLogoSize("orcid-logo", 30, 40);
+    adjustLogoSize("researchGate-logo", 30, 40);
   });
 
-  window.addEventListener('resize', function () {
-    adjustLogoSize('orcid-logo', 30, 40);
-    adjustLogoSize('researchGate-logo', 30, 40);
+  window.addEventListener("resize", function () {
+    adjustLogoSize("orcid-logo", 30, 40);
+    adjustLogoSize("researchGate-logo", 30, 40);
   });
-
-
 
   return (
-    <Box sx={{
-      width: "100%",
-      p: "50px 0 20px 0",
-      mb: 8,
-      borderStyle: "solid",
-      borderColor: "rgba(194, 224, 255, 0.08)",
-      borderWidth: "0px 0px thin",
-      backgroundColor: "#fff",
-    }}>
+    <Box
+      sx={{
+        width: "100%",
+        p: "50px 0 20px 0",
+        mb: 8,
+        borderStyle: "solid",
+        borderColor: "rgba(194, 224, 255, 0.08)",
+        borderWidth: "0px 0px thin",
+        backgroundColor: "#fff",
+      }}
+    >
       <Grid sx={{ flexGrow: 1 }} container spacing={3}>
-        <Grid item sx={{
-          m: "0 5%",
-        }}>
+        <Grid
+          item
+          sx={{
+            m: "0 9%",
+          }}
+        >
           <Typography
             component="h1"
             sx={{
@@ -54,7 +61,8 @@ export const Link = () => {
               fontSize: 30,
               fontWeight: "Prime",
               ml: 1.5,
-            }}>
+            }}
+          >
             Link
           </Typography>
           <Typography
@@ -64,55 +72,82 @@ export const Link = () => {
               fontSize: 14,
               fontWeight: "Light",
               ml: 0.5,
-            }}>
+            }}
+          >
             ー リンク ー
           </Typography>
         </Grid>
       </Grid>
 
-      <Grid container justifyContent="center" alignItems="center" spacing={3} sx={{ mt: 4 }}>
+      <Grid
+        container
+        justifyContent="center"
+        alignItems="center"
+        spacing={3}
+        sx={{ mt: 4 }}
+      >
         <Grid item>
-          <IconButton onClick={() => handleLinkClick('https://www.instagram.com/shwg_2.0.929/')}>
-            <Instagram sx={{
-              fontSize: 40,
-              "@media screen and (max-width: 420px)": {
-                fontSize: 30,
-              },
-              color: pink[500]
-            }} />
+          <IconButton
+            onClick={() =>
+              handleLinkClick("https://www.instagram.com/shwg_2.0.929/")
+            }
+          >
+            <Instagram
+              sx={{
+                fontSize: 40,
+                "@media screen and (max-width: 420px)": {
+                  fontSize: 30,
+                },
+                color: pink[500],
+              }}
+            />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton onClick={() => handleLinkClick('https://twitter.com/au_tr_')}>
-            <Twitter sx={{
-              fontSize: 40,
-              "@media screen and (max-width: 420px)": {
-                fontSize: 30,
-              },
-              color: blue[500]
-            }} />
+          <IconButton
+            onClick={() => handleLinkClick("https://twitter.com/au_tr_")}
+          >
+            <Twitter
+              sx={{
+                fontSize: 40,
+                "@media screen and (max-width: 420px)": {
+                  fontSize: 30,
+                },
+                color: blue[500],
+              }}
+            />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton onClick={() => handleLinkClick('https://www.linkedin.com/in/shimada-shogo/')}>
-            <LinkedIn sx={{
-              fontSize: 40,
-              "@media screen and (max-width: 420px)": {
-                fontSize: 30,
-              },
-              color: blue[900]
-            }} />
+          <IconButton
+            onClick={() =>
+              handleLinkClick("https://www.linkedin.com/in/shimada-shogo/")
+            }
+          >
+            <LinkedIn
+              sx={{
+                fontSize: 40,
+                "@media screen and (max-width: 420px)": {
+                  fontSize: 30,
+                },
+                color: blue[900],
+              }}
+            />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton onClick={() => handleLinkClick('https://github.com/shwg8986')}>
-            <GitHub sx={{
-              fontSize: 40,
-              "@media screen and (max-width: 420px)": {
-                fontSize: 30,
-              },
-              color: "#000"
-            }} />
+          <IconButton
+            onClick={() => handleLinkClick("https://github.com/shwg8986")}
+          >
+            <GitHub
+              sx={{
+                fontSize: 40,
+                "@media screen and (max-width: 420px)": {
+                  fontSize: 30,
+                },
+                color: "#000",
+              }}
+            />
           </IconButton>
         </Grid>
         {/* <Grid item>
@@ -122,8 +157,20 @@ export const Link = () => {
           </IconButton>
         </Grid> */}
         <Grid item>
-          <IconButton onClick={() => handleLinkClick('https://www.researchgate.net/profile/Shogo-Shimada-2')}>
-            <img id="researchGate-logo" alt="Research Gate Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1280px-ResearchGate_icon_SVG.svg.png" width="40" height="40" />
+          <IconButton
+            onClick={() =>
+              handleLinkClick(
+                "https://www.researchgate.net/profile/Shogo-Shimada-2"
+              )
+            }
+          >
+            <img
+              id="researchGate-logo"
+              alt="Research Gate Logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1280px-ResearchGate_icon_SVG.svg.png"
+              width="40"
+              height="40"
+            />
           </IconButton>
         </Grid>
         {/* <Grid item>
@@ -137,6 +184,6 @@ export const Link = () => {
           </IconButton>
         </Grid> */}
       </Grid>
-    </Box >
-  )
-}
+    </Box>
+  );
+};
