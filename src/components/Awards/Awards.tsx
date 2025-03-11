@@ -68,7 +68,7 @@ export const Awards = () => {
               m: "0 auto",
             }}
           >
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
               <Table
                 sx={{
                   maxWidth: 1000,

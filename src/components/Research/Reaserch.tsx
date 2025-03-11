@@ -64,7 +64,7 @@ export const Research = () => {
               m: "20px auto 70px",
             }}
           >
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
               <Table
                 sx={{
                   maxWidth: 1000,
@@ -128,7 +128,7 @@ export const Research = () => {
               m: "0px auto 70px",
             }}
           >
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
               <Table
                 sx={{
                   maxWidth: 1000,
@@ -192,7 +192,7 @@ export const Research = () => {
               m: "0px auto 70px",
             }}
           >
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
               <Table
                 sx={{
                   maxWidth: 1000,
