@@ -73,6 +73,7 @@ export const EducationalBackground = () => {
                   color: "#fff",
                 }}
                 aria-label="simple table"
+                stickyHeader
               >
                 <TableHead>
                   <TableRow>

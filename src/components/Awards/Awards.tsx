@@ -75,6 +75,7 @@ export const Awards = () => {
                   backgroundColor: "#fff",
                 }}
                 aria-label="simple table"
+                stickyHeader
               >
                 <TableHead>
                   <TableRow>

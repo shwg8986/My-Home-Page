@@ -76,6 +76,7 @@ export const Certifications = () => {
                   color: "#fff",
                 }}
                 aria-label="simple table"
+                stickyHeader
               >
                 <TableHead>
                   <TableRow>

@@ -72,6 +72,7 @@ export const Research = () => {
                   color: "#fff",
                 }}
                 aria-label="simple table"
+                stickyHeader
               >
                 <TableHead>
                   <TableRow>
@@ -136,6 +137,7 @@ export const Research = () => {
                   color: "#fff",
                 }}
                 aria-label="simple table"
+                stickyHeader
               >
                 <TableHead>
                   <TableRow>
@@ -200,6 +202,7 @@ export const Research = () => {
                   color: "#fff",
                 }}
                 aria-label="simple table"
+                stickyHeader
               >
                 <TableHead>
                   <TableRow>
