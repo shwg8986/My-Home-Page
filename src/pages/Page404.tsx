@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { Link } from "react-router-dom";
-import { StyledButton } from "../components/ui-elements/StyledButton";
+import { StyledButton } from "../ui-elements/StyledButton";
 
 export const Page404 = () => {
     return (
