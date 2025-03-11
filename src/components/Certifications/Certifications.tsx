@@ -68,7 +68,27 @@ export const Certifications = () => {
               m: "0 auto",
             }}
           >
-            <TableContainer component={Paper} sx={{ maxHeight: 400 }}>
+            <TableContainer
+              component={Paper}
+              sx={{
+                maxHeight: 400,
+                overflowY: "scroll", // 常にスクロールバーを表示
+                // スクロールバーのカスタムスタイル（WebKit系ブラウザ向け）
+                "&::-webkit-scrollbar": {
+                  width: "12px", // iPhoneなどで見やすい幅に調整
+                },
+                "&::-webkit-scrollbar-track": {
+                  background: "#f1f1f1",
+                },
+                "&::-webkit-scrollbar-thumb": {
+                  backgroundColor: "#888",
+                  borderRadius: "10px",
+                },
+                "&::-webkit-scrollbar-thumb:hover": {
+                  background: "#555",
+                },
+              }}
+            >
               <Table
                 sx={{
                   maxWidth: 1000,
