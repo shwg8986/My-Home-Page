@@ -6,8 +6,6 @@ import { Certifications } from "../components/Certifications/Certifications";
 import { EducationalBackground } from "../components/EducationalBackground/EducationalBackground";
 import { Experience } from "../components/Experience/Experience";
 import { Research } from "../components/Research/Reaserch";
-// import { Programming } from "../components/Programming/Programming";
-// import { Contact } from "../components/Contact";
 import { Link } from "../components/Link/Link";
 import ScrollTop from "../ui-elements/ScrollTop";
 
@@ -19,10 +17,8 @@ export const Home = () => {
       <EducationalBackground />
       <Experience />
       <Research />
-      {/* <Programming /> */}
       <Certifications />
       <Awards />
-      {/* <Contact /> */}
       <Link />
       <Footer />
       <ScrollTop />
