@@ -20,8 +20,8 @@ export const Awards = () => {
     <Box
       sx={{
         width: "100%",
-        p: "10px 0 50px 0",
-        mb: 8,
+        p: "30px 0 70px 0",
+        mb: 5,
         borderStyle: "solid",
         borderColor: "rgba(194, 224, 255, 0.08)",
         borderWidth: "0px 0px thin",
