@@ -67,7 +67,7 @@ export const Research = () => {
             <TableContainer
               component={Paper}
               sx={{
-                maxHeight: 400,
+                maxHeight: 500,
                 overflowY: "scroll", // 常にスクロールバーを表示
                 // スクロールバーのカスタムスタイル（WebKit系ブラウザ向け）
                 "&::-webkit-scrollbar": {
@@ -152,7 +152,7 @@ export const Research = () => {
             <TableContainer
               component={Paper}
               sx={{
-                maxHeight: 400,
+                maxHeight: 500,
                 overflowY: "scroll", // 常にスクロールバーを表示
                 // スクロールバーのカスタムスタイル（WebKit系ブラウザ向け）
                 "&::-webkit-scrollbar": {
@@ -237,7 +237,7 @@ export const Research = () => {
             <TableContainer
               component={Paper}
               sx={{
-                maxHeight: 400,
+                maxHeight: 500,
                 overflowY: "scroll", // 常にスクロールバーを表示
                 // スクロールバーのカスタムスタイル（WebKit系ブラウザ向け）
                 "&::-webkit-scrollbar": {
