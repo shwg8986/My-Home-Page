@@ -74,7 +74,7 @@ export const EducationalBackground = () => {
                 {row.Dates}
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot variant="outlined" color="primary" />
                 {index !== EducationalBackGroundInfo.length - 1 && (
                   <TimelineConnector />
                 )}
