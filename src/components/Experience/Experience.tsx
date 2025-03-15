@@ -62,7 +62,12 @@ export const Experience = () => {
           >
             <div>
               {rows.map((row) => (
-                <Accordion key={row.title}>
+                <Accordion
+                  key={row.title}
+                  sx={{
+                    mb: 1,
+                  }}
+                >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
