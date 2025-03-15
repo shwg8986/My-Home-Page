@@ -40,7 +40,7 @@ export const Link = () => {
       sx={{
         width: "100%",
         p: "50px 0 20px 0",
-        mb: 8,
+        mb: 10,
         borderStyle: "solid",
         borderColor: "rgba(194, 224, 255, 0.08)",
         borderWidth: "0px 0px thin",
