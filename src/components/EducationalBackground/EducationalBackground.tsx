@@ -1,20 +1,16 @@
 import * as React from "react";
+import { Box, Typography, Container } from "@mui/material";
 import {
-  Box,
-  Typography,
-  Grid,
-  Container,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-} from "@mui/material";
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineOppositeContent,
+  timelineOppositeContentClasses,
+} from "@mui/lab";
 import { EducationalBackGroundInfo } from "./Info";
-
-const rows = [...EducationalBackGroundInfo];
 
 export const EducationalBackground = () => {
   return (
@@ -43,7 +39,7 @@ export const EducationalBackground = () => {
         <Typography
           component="h2"
           sx={{
-            color: "#gray",
+            color: "gray",
             fontSize: 14,
             fontWeight: "Light",
             ml: 18,
@@ -57,112 +53,46 @@ export const EducationalBackground = () => {
         </Typography>
       </Box>
       <Container>
-        <Grid container spacing={1}>
-          <Grid
-            item
-            sx={{
-              width: "92%",
-              m: "0 auto",
-            }}
-          >
-            <TableContainer
-              component={Paper}
-              sx={{
-                maxHeight: 400,
-                overflowY: "scroll", // 常にスクロールバーを表示
-                // スクロールバーのカスタムスタイル（WebKit系ブラウザ向け）
-                "&::-webkit-scrollbar": {
-                  width: "12px", // iPhoneなどで見やすい幅に調整
-                },
-                "&::-webkit-scrollbar-track": {
-                  background: "#f1f1f1",
-                },
-                "&::-webkit-scrollbar-thumb": {
-                  backgroundColor: "#888",
-                  borderRadius: "10px",
-                },
-                "&::-webkit-scrollbar-thumb:hover": {
-                  background: "#555",
-                },
-              }}
-            >
-              <Table
+        <Timeline
+          sx={{
+            [`& .${timelineOppositeContentClasses.root}`]: {
+              flex: 0.2,
+            },
+          }}
+        >
+          {EducationalBackGroundInfo.map((row, index) => (
+            <TimelineItem key={index}>
+              <TimelineOppositeContent
+                color="textSecondary"
                 sx={{
-                  maxWidth: 1000,
-                  backgroundColor: "#fff",
-                  color: "#fff",
+                  fontSize: 16,
+                  "@media screen and (max-width: 420px)": {
+                    fontSize: 14,
+                  },
                 }}
-                aria-label="simple table"
-                stickyHeader
               >
-                <TableHead>
-                  <TableRow>
-                    <TableCell
-                      sx={{
-                        color: "#000",
-                        fontWeight: "500",
-                        fontSize: 16,
-                        "@media screen and (max-width: 420px)": {
-                          fontSize: 14,
-                        },
-                      }}
-                    >
-                      年/月
-                    </TableCell>
-                    <TableCell
-                      align="left"
-                      sx={{
-                        color: "#000",
-                        fontWeight: "500",
-                        fontSize: 16,
-                        "@media screen and (max-width: 420px)": {
-                          fontSize: 14,
-                        },
-                      }}
-                    >
-                      学校
-                    </TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {rows.map((row) => (
-                    <TableRow
-                      key={row.Dates}
-                      sx={{
-                        "&:last-child td, &:last-child th": { border: 0 },
-                      }}
-                    >
-                      <TableCell
-                        component="th"
-                        scope="row"
-                        sx={{
-                          fontSize: 16,
-                          "@media screen and (max-width: 420px)": {
-                            fontSize: 14,
-                          },
-                        }}
-                      >
-                        {row.Dates}
-                      </TableCell>
-                      <TableCell
-                        align="left"
-                        sx={{
-                          color: "#000",
-                          fontSize: 16,
-                          "@media screen and (max-width: 420px)": {
-                            fontSize: 14,
-                          },
-                        }}
-                      >
-                        {row.schools}
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
-        </Grid>
+                {row.Dates}
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot />
+                {index !== EducationalBackGroundInfo.length - 1 && (
+                  <TimelineConnector />
+                )}
+              </TimelineSeparator>
+              <TimelineContent
+                sx={{
+                  fontSize: 16,
+                  color: "#000",
+                  "@media screen and (max-width: 420px)": {
+                    fontSize: 14,
+                  },
+                }}
+              >
+                {row.schools}
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
       </Container>
     </Box>
   );
