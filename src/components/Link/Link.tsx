@@ -39,7 +39,7 @@ export const Link = () => {
     <Box
       sx={{
         width: "100%",
-        p: "50px 0 20px 0",
+        p: "20px 0 20px 0",
         mb: 10,
         borderStyle: "solid",
         borderColor: "rgba(194, 224, 255, 0.08)",
