@@ -26,11 +26,11 @@ export const Pages = [
 export const SNSs = [
   {
     name: "Twitter",
-    URL: "https://twitter.com/au_tr_",
+    URL: "https://x.com/shwg_360",
   },
   {
     name: "Instagram",
-    URL: "https://www.instagram.com/shwg_2.0.929",
+    URL: "https://www.instagram.com/shwg_sh_",
   },
   {
     name: "LinkedIn",

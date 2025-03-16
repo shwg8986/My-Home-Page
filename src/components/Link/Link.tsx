@@ -1,6 +1,6 @@
 import { Box, Typography, Grid } from "@mui/material";
 import { IconButton } from "@mui/material";
-import { Instagram, Twitter, LinkedIn, GitHub } from "@mui/icons-material";
+import { Instagram, X, LinkedIn, GitHub } from "@mui/icons-material";
 import { pink, blue } from "@mui/material/colors";
 
 export const Link = () => {
@@ -89,7 +89,7 @@ export const Link = () => {
         <Grid item>
           <IconButton
             onClick={() =>
-              handleLinkClick("https://www.instagram.com/shwg_2.0.929/")
+              handleLinkClick("https://www.instagram.com/shwg_sh_")
             }
           >
             <Instagram
@@ -104,16 +104,14 @@ export const Link = () => {
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton
-            onClick={() => handleLinkClick("https://twitter.com/au_tr_")}
-          >
-            <Twitter
+          <IconButton onClick={() => handleLinkClick("https://x.com/shwg_360")}>
+            <X
               sx={{
                 fontSize: 40,
                 "@media screen and (max-width: 420px)": {
                   fontSize: 30,
                 },
-                color: blue[500],
+                color: "black",
               }}
             />
           </IconButton>
