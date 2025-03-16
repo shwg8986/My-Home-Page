@@ -1,6 +1,12 @@
 import { Box, Typography, Grid } from "@mui/material";
 import { IconButton } from "@mui/material";
-import { Instagram, X, LinkedIn, GitHub } from "@mui/icons-material";
+import {
+  Instagram,
+  X,
+  LinkedIn,
+  GitHub,
+  ThreeDRotation,
+} from "@mui/icons-material";
 import { pink, blue } from "@mui/material/colors";
 
 export const Link = () => {
@@ -83,9 +89,24 @@ export const Link = () => {
         container
         justifyContent="center"
         alignItems="center"
-        spacing={3}
-        sx={{ mt: 4 }}
+        spacing={4}
+        sx={{ pt: 3, pb: 6, width: "95%", margin: "0 auto" }}
       >
+        <Grid item>
+          <IconButton
+            onClick={() => handleLinkClick("https://shimada-web3d.com/")}
+          >
+            <ThreeDRotation
+              sx={{
+                fontSize: 40,
+                "@media screen and (max-width: 420px)": {
+                  fontSize: 30,
+                },
+                color: "teal",
+              }}
+            />
+          </IconButton>
+        </Grid>
         <Grid item>
           <IconButton
             onClick={() =>
