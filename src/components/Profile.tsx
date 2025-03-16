@@ -24,8 +24,8 @@ export const Profile = () => {
               component="img"
               sx={{
                 maxWidth: 300,
-                borderRadius: 90,
-                boxShadow: "0 0 10px #3399ff",
+                borderRadius: 1,
+                boxShadow: "0 0 30px #3399ff",
                 ml: 2,
                 "@media screen and (max-width: 420px)": {
                   maxWidth: 200,
@@ -44,9 +44,10 @@ export const Profile = () => {
             <Box
               sx={{
                 mr: 1,
+                mt: 2,
                 "@media screen and (max-width: 550px)": {
-                  ml: 4,
-                  mr: 4,
+                  ml: 2,
+                  mr: 2,
                 },
               }}
             >
