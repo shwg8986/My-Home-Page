@@ -6,7 +6,7 @@ export const Profile = () => {
       <Box
         sx={{
           width: "100%",
-          p: "90px 0",
+          p: "140px 0 50px 0",
           borderStyle: "solid",
           borderColor: "rgba(194, 224, 255, 0.08)",
           borderWidth: "0px 0px thin",

@@ -42,7 +42,7 @@ export const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Box
         sx={{
           backgroundColor: "#0A1929",
@@ -53,10 +53,10 @@ export const ResponsiveAppBar = () => {
         }}
       >
         <Container>
-          <Toolbar disableGutters>
+          <Toolbar disableGutters sx={{ maxHeight: 90 }}>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
-                size="large"
+                size="medium"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
@@ -65,8 +65,8 @@ export const ResponsiveAppBar = () => {
               >
                 <MenuIcon
                   sx={{
-                    width: 40,
-                    height: 40,
+                    width: 30,
+                    height: 30,
                     borderStyle: "solid",
                     p: 0,
                     borderColor: "rgba(194, 224, 255, 0.08)",
@@ -133,7 +133,7 @@ export const ResponsiveAppBar = () => {
                 flexGrow: 1,
                 fontFamily: "Comic Sans MS",
                 fontWeight: 700,
-                fontSize: 20,
+                fontSize: 16,
                 letterSpacing: ".3rem",
                 color: "#3399ff",
                 textDecoration: "none",
