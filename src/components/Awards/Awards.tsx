@@ -72,10 +72,11 @@ export const Awards = () => {
               component={Paper}
               sx={{
                 maxHeight: 400,
-                overflowY: "scroll", // 常にスクロールバーを表示
-                // スクロールバーのカスタムスタイル（WebKit系ブラウザ向け）
+                overflowY: "scroll",
+                scrollbarWidth: "thin",
+                scrollbarColor: "#888 #f1f1f1",
                 "&::-webkit-scrollbar": {
-                  width: "12px", // iPhoneなどで見やすい幅に調整
+                  width: "8px",
                 },
                 "&::-webkit-scrollbar-track": {
                   background: "#f1f1f1",
