@@ -38,5 +38,5 @@ firebase init
 
 ```
 yarn build
-firebase deploy
+firebase init
 ```
