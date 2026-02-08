@@ -13,6 +13,7 @@ import {
   Paper,
 } from "@mui/material";
 import { CertificationsInfo } from "./Info";
+import { ScrollableBox } from "../../ui-elements/ScrollableBox";
 
 const rows = [...CertificationsInfo];
 export const Certifications = () => {
@@ -68,104 +69,87 @@ export const Certifications = () => {
               m: "0 auto",
             }}
           >
-            <TableContainer
-              component={Paper}
-              sx={{
-                maxHeight: 500,
-                overflowY: "scroll",
-                scrollbarWidth: "thin",
-                scrollbarColor: "#888 #f1f1f1",
-                "&::-webkit-scrollbar": {
-                  width: "8px",
-                },
-                "&::-webkit-scrollbar-track": {
-                  background: "#f1f1f1",
-                },
-                "&::-webkit-scrollbar-thumb": {
-                  backgroundColor: "#888",
-                  borderRadius: "10px",
-                },
-                "&::-webkit-scrollbar-thumb:hover": {
-                  background: "#555",
-                },
-              }}
-            >
-              <Table
-                sx={{
-                  maxWidth: 1000,
-                  backgroundColor: "#fff",
-                  color: "#fff",
-                }}
-                aria-label="simple table"
-                stickyHeader
-              >
-                <TableHead>
-                  <TableRow>
-                    <TableCell
-                      sx={{
-                        color: "#000",
-                        fontWeight: "500",
-                        fontSize: 16,
-                        p: "16px",
-                        "@media screen and (max-width: 420px)": {
-                          fontSize: 14,
-                        },
-                      }}
-                    >
-                      年/月
-                    </TableCell>
-                    <TableCell
-                      align="left"
-                      sx={{
-                        color: "#000",
-                        fontWeight: "500",
-                        fontSize: 16,
-                        "@media screen and (max-width: 420px)": {
-                          fontSize: 14,
-                        },
-                      }}
-                    >
-                      資格/試験
-                    </TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {rows.map((row) => (
-                    <TableRow
-                      key={row.Dates}
-                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                    >
+            <ScrollableBox maxHeight={500}>
+              <TableContainer component={Paper}>
+                <Table
+                  sx={{
+                    maxWidth: 1000,
+                    backgroundColor: "#fff",
+                    color: "#fff",
+                  }}
+                  aria-label="simple table"
+                  stickyHeader
+                >
+                  <TableHead>
+                    <TableRow>
                       <TableCell
-                        component="th"
-                        scope="row"
                         sx={{
+                          color: "#000",
+                          fontWeight: "500",
                           fontSize: 16,
-                          fontWeight: "normal",
+                          p: "16px",
                           "@media screen and (max-width: 420px)": {
                             fontSize: 14,
                           },
                         }}
                       >
-                        {row.Dates}
+                        年/月
                       </TableCell>
                       <TableCell
                         align="left"
                         sx={{
                           color: "#000",
+                          fontWeight: "500",
                           fontSize: 16,
-                          fontWeight: "normal",
                           "@media screen and (max-width: 420px)": {
                             fontSize: 14,
                           },
                         }}
                       >
-                        {row.Certifications}
+                        資格/試験
                       </TableCell>
                     </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
+                  </TableHead>
+                  <TableBody>
+                    {rows.map((row) => (
+                      <TableRow
+                        key={row.Dates}
+                        sx={{
+                          "&:last-child td, &:last-child th": { border: 0 },
+                        }}
+                      >
+                        <TableCell
+                          component="th"
+                          scope="row"
+                          sx={{
+                            fontSize: 16,
+                            fontWeight: "normal",
+                            "@media screen and (max-width: 420px)": {
+                              fontSize: 14,
+                            },
+                          }}
+                        >
+                          {row.Dates}
+                        </TableCell>
+                        <TableCell
+                          align="left"
+                          sx={{
+                            color: "#000",
+                            fontSize: 16,
+                            fontWeight: "normal",
+                            "@media screen and (max-width: 420px)": {
+                              fontSize: 14,
+                            },
+                          }}
+                        >
+                          {row.Certifications}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </ScrollableBox>
           </Grid>
         </Grid>
       </Container>

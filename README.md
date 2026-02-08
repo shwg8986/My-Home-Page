@@ -29,6 +29,7 @@ firebase login
 ```
 firebase init
 ```
+
 ここで Hosting のところで、Space キーを押す。選択されているのを確認できたら Enter。
 その後、What do you want to use as your public directory? と聞かれるので、build と入力し、Enter。
 以降表示される質問は、全て "N" と答えていく。
@@ -38,5 +39,5 @@ firebase init
 
 ```
 yarn build
-firebase init
+firebase deploy
 ```
