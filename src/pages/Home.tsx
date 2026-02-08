@@ -7,6 +7,7 @@ import { EducationalBackground } from "../components/EducationalBackground/Educa
 import { Experience } from "../components/Experience/Experience";
 import { Research } from "../components/Research/Reaserch";
 import { Link } from "../components/Link/Link";
+import { AboutMe } from "../components/AboutMe";
 import ScrollTop from "../ui-elements/ScrollTop";
 
 export const Home = () => {
@@ -21,7 +22,13 @@ export const Home = () => {
       </div>
       <div
         className="animated"
-        style={{ animationDelay: "0.2s", animationName: "slideInRight" }}
+        style={{ animationDelay: "0.15s", animationName: "slideInRight" }}
+      >
+        <AboutMe />
+      </div>
+      <div
+        className="animated"
+        style={{ animationDelay: "0.2s", animationName: "slideInLeft" }}
       >
         <EducationalBackground />
       </div>

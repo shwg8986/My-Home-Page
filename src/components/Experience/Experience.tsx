@@ -100,43 +100,105 @@ export const Experience = () => {
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography
-                      sx={{
-                        fontWeight: "Bold",
-                        fontFamily: "Noto Sans",
-                        fontSize: 16,
-                        "@media screen and (max-width: 420px)": {
-                          fontSize: 14,
-                        },
-                        p: "0 0 10px 0",
-                      }}
-                    >
-                      {row.days}
-                    </Typography>
-                    <Typography
-                      sx={{
-                        fontFamily: "Noto Sans",
-                        fontSize: 16,
-                        "@media screen and (max-width: 420px)": {
-                          fontSize: 14,
-                        },
-                      }}
-                    >
-                      {row.content}
-                    </Typography>
-                    {row.content2 ? (
-                      <Typography
-                        sx={{
-                          fontFamily: "Noto Sans",
-                          fontSize: 16,
-                          "@media screen and (max-width: 420px)": {
-                            fontSize: 14,
-                          },
-                        }}
-                      >
-                        {row.content2}
-                      </Typography>
-                    ) : null}
+                    {row.subExperiences ? (
+                      row.subExperiences.map((sub, idx) => (
+                        <Box
+                          key={idx}
+                          sx={{
+                            mb:
+                              idx < (row.subExperiences?.length ?? 0) - 1
+                                ? 3
+                                : 0,
+                            pb:
+                              idx < (row.subExperiences?.length ?? 0) - 1
+                                ? 3
+                                : 0,
+                            borderBottom:
+                              idx < (row.subExperiences?.length ?? 0) - 1
+                                ? "1px solid #e0e0e0"
+                                : "none",
+                          }}
+                        >
+                          <Typography
+                            sx={{
+                              fontWeight: "Bold",
+                              fontFamily: "Noto Sans",
+                              fontSize: 16,
+                              "@media screen and (max-width: 420px)": {
+                                fontSize: 14,
+                              },
+                              p: "0 0 4px 0",
+                            }}
+                          >
+                            {sub.days}
+                          </Typography>
+                          <Typography
+                            sx={{
+                              fontWeight: 500,
+                              fontFamily: "Noto Sans",
+                              fontSize: 16,
+                              "@media screen and (max-width: 420px)": {
+                                fontSize: 14,
+                              },
+                              p: "0 0 8px 0",
+                            }}
+                          >
+                            {sub.subtitle}
+                          </Typography>
+                          <Typography
+                            sx={{
+                              fontFamily: "Noto Sans",
+                              fontSize: 16,
+                              "@media screen and (max-width: 420px)": {
+                                fontSize: 14,
+                              },
+                            }}
+                          >
+                            {sub.content}
+                          </Typography>
+                        </Box>
+                      ))
+                    ) : (
+                      <>
+                        <Typography
+                          sx={{
+                            fontWeight: "Bold",
+                            fontFamily: "Noto Sans",
+                            fontSize: 16,
+                            "@media screen and (max-width: 420px)": {
+                              fontSize: 14,
+                            },
+                            p: "0 0 10px 0",
+                          }}
+                        >
+                          {row.days}
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "Noto Sans",
+                            fontSize: 16,
+                            "@media screen and (max-width: 420px)": {
+                              fontSize: 14,
+                            },
+                          }}
+                        >
+                          {row.content}
+                        </Typography>
+                        {row.content2 ? (
+                          <Typography
+                            sx={{
+                              fontFamily: "Noto Sans",
+                              fontSize: 16,
+                              "@media screen and (max-width: 420px)": {
+                                fontSize: 14,
+                              },
+                            }}
+                          >
+                            {row.content2}
+                          </Typography>
+                        ) : null}
+                      </>
+                    )}
                   </AccordionDetails>
                 </Accordion>
               ))}

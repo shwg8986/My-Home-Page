@@ -1,9 +1,16 @@
+export type SubExperience = {
+  days: string;
+  subtitle: string;
+  content: string;
+};
+
 export type ExperienceType = {
   title: string;
   days: string;
   content: string;
   content2?: string;
   URL?: string;
+  subExperiences?: SubExperience[];
 };
 
 export const ExperienceInfo = [
@@ -49,10 +56,23 @@ export const ExperienceInfo = [
     URL: "https://pb.edu.pl/iro/nawa-projects/biometrics-intelligent-solutions/",
   },
   {
-    title: "KDDI株式会社",
+    title: "KDDI株式会社 / KDDI総合研究所",
     days: "2024/4〜current",
-    content:
-      "フルスタックエンジニアのような働きをしています。Webフロント・バックエンド、インフラ構築まで全部やります。一方でネットワークの知識は浅く、今後の課題です。技術スタック: TypeScript(React), Flask, AWS, Terraform, Docker",
+    content: "",
     URL: "https://www.kddi.com/",
+    subExperiences: [
+      {
+        days: "2024/4〜2025/3",
+        subtitle: "IoT技術部 開発グループ",
+        content:
+          "スクラム開発において、Webフロント・バックエンド、AWS構築、CI/CDを担当しておりました。技術スタック: TypeScript(React), Flask, AWS, Docker, Terraform, Cypress.",
+      },
+      {
+        days: "2025/4〜current",
+        subtitle: "研究所に出向中",
+        content:
+          "AI部門にて、量子コンピューティングの勉強・研究を行っています。",
+      },
+    ],
   },
 ];
